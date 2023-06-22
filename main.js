@@ -1,24 +1,8 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+/*
+let x=document.getElementById("jacob-thompson-id");
+x.innerHTML = "<p class=\"margin-jacob-paragraph\" id=\"jacob-thompson-id\" style=\"margin-left:-35px\">\n" +
+    "      <span style=\"font-weight: var(--fw-bold)\">Jacob Thompson </span>\n" +
+    "      <span style=\"color: var(--dark-grayish-blue)\">has <br> joined your group </span>\n" +
+    "      <span style=\"font-weight: var(--fw-bold);color: var(--kashmir-blue)\">Chess Club </span><span class=\"red-dot\"> &#x2022;</span><br>\n" +
+    "      <span style=\"color: var(--grayish-blue)\"> 1 day ago</span>\n" +
+    "    </p>"*/
