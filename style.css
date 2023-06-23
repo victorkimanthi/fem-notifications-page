@@ -23,6 +23,7 @@
   --white: hsl(0, 0%, 100%);
   --very-light-grayish-blue: hsl(210, 60%, 98%);
 --light-grayish-blue-1: hsl(211, 68%, 94%);
+--selago: hsl(228, 71%, 99%);
 --light-grayish-blue-2: hsl(205, 33%, 90%);
 --light-grayish-blue-3: hsl(206, 64%, 98%);
 --grayish-blue: hsl(219, 14%, 63%);
@@ -59,18 +60,95 @@ body{
   box-sizing:border-box;
   font-size: var(--fs-body-16);
   font-family: var(--ff-body);
+  position: relative;
 }
 
 /* general styling */
-
-.main-section {
- /* overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  width: 90%;
-  max-width: 90%;
-  background-color: red;*/
+@media (min-width: 768px) {
+  body {
+    background-color: var(--selago);
+  }
+  .main-section {
+    background-color: var(--white);
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .notifications-title {
+    /*margin-left: -140px !important;*/
+    margin-left: 30px !important;
+  }
+  .notifications-title-2 {
+    /*margin-right: -150px !important;*/
+    margin-right: 30px !important;
+  }
+  .notifications-divs {
+    display: flex;
+    flex-direction: column;
+  }
+  .mark-webber-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light-grayish-blue-3);
+    margin: 8px 25px 10px;
+    /*padding:2px 8px;*/
+    border-radius: 10px;
+    position: relative;
+  }
+  .avatar-mark-webber {
+    /*margin-top: 0px !important;
+    margin-left: -120px !important;*/
+    position: absolute;
+    left:2%;
+    top:45%;
+  }
+  .margin-mark-paragraph {
+    margin-left: 40px !important;
+  }
+  .angela-gray-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-grayish-blue-3);
+    margin: 0 25px 10px;
+    /*padding:1px;*/
+    border-radius: 10px;
+  }
+  .avatar-angela-gray {
+    position: absolute;
+    left:17%;
+  }
+  .margin-angela-paragraph {
+    margin-left: 80px !important;
+  }
+  .jacob-thompson-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-grayish-blue-3);
+    margin: 0 25px 10px;
+    /*padding:1px;*/
+    border-radius: 10px;
+  }
+  .avatar-jacob-thompson {
+    position: absolute;
+    left:11%;
+    top:43%;
+  }
+  .margin-jacob-paragraph {
+    margin-left: 80px !important;
+  }
 }
+
 @media (max-width: 460px) {
     .main-section {
       width: 100%;
@@ -218,7 +296,6 @@ body{
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 350px) {
   .main-section{
     font-size: var(--fs-body-14);
