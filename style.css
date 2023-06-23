@@ -67,15 +67,19 @@ body{
 @media (min-width: 768px) {
   body {
     background-color: var(--selago);
+    font-size: var(--fs-body-14);
   }
   .main-section {
     background-color: var(--white);
-    width: 50%;
-    height: 90%;
+    width: 55%;
+    /*width: min(200px,500px);*/
+    height: 100%;
+    margin-top: 55px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 5px;
   }
   .notifications-header {
     display: flex;
@@ -142,10 +146,60 @@ body{
   .avatar-jacob-thompson {
     position: absolute;
     left:11%;
-    top:43%;
+    top:42%;
   }
   .margin-jacob-paragraph {
     margin-left: 80px !important;
+  }
+  .rizky-div {
+    display: grid;
+    gap:0.1rem;
+    /*grid-template-columns: 20% 76%;*/
+    grid-template-columns: 14% 82%;
+  }
+  .avatar-rizky {
+    margin-left: 45px !important;
+    /*margin-top: 16px;*/
+  }
+  .grid-column-dimension {
+    grid-column:2 / 3;
+  }
+  .rizky-div p:nth-child(3) {
+    border: 1px solid var(--light-grayish-blue-2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 21px;
+    margin-top: -2px;
+  }
+  .kimberly-smith-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin:22px 8px 10px 5px;
+    /*padding:1px;*/
+    /*border-radius: 10px;*/
+  }
+  .avatar-kimberly{
+    /*margin-left: -110px;*/
+    position: absolute;
+    left:6%;
+  }
+  .margin-smith-paragraph{
+    margin-left:-32% !important;
+  }
+  .kimberly-smith-div img:nth-child(3) {
+    /*margin-right: -50px;*/
+    position: absolute;
+    right:7%;
+  }
+  .nathan-peterson-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 20px 10px;
+  }
+  .avatar-nathan {
+    margin-left: 34px !important;
   }
 }
 
@@ -168,6 +222,10 @@ body{
 }
 
 @media (max-width: 460px) {
+  .break-line::before {
+    content: "\a";
+    white-space: pre;
+  }
   .notifications-header {
     display: flex;
     justify-content: space-around;
@@ -257,6 +315,10 @@ body{
 }
 
 @media (max-width: 376px) {
+  .break-line::before {
+    content: "\a";
+    white-space: pre;
+  }
   .main-section{
     height:123%;
   }
@@ -297,6 +359,10 @@ body{
   }
 }
 @media (max-width: 350px) {
+  .break-line::before {
+    content: "\a";
+    white-space: pre;
+  }
   .main-section{
     font-size: var(--fs-body-14);
     width: 100%;
